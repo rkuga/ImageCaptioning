@@ -150,7 +150,7 @@ class Network(BaseNetwork):
 
     def test(self):
         p = ProgressBar()
-        f = open(self.out_image_dir+'captions.txt', 'w')
+        f = open('./captions.txt', 'w')
         for i_  in p(range(0,len(self.test_data),self.batchsize)): 
             data = np.zeros((self.batchsize, self.in_channel, self.input_height, self.input_width), dtype=np.float32)
             t2 = np.zeros((self.batchsize, self.input_height, self.input_width), dtype=np.int32)
