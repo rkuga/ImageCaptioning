@@ -16,13 +16,13 @@ download the flickr8k or mscoco dataset
 ### step3.  
 run the code for training  
 ```
-python main.py --data_dir your_path
+python main.py --data_dir your_path --dataset flickr8k
 ```
   
 ### step4.  
 after training 100 epochs, run the code for testing   
 ```
-python main.py --mode test --data_dir your_path --load captioning 100
+python main.py --mode test --data_dir your_path --dataset flickr8k --load captioning 100
 ```  
 
 
