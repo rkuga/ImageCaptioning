@@ -78,7 +78,7 @@ class Network(BaseNetwork):
         self.batchsize=batchsize
 
     def my_state(self):
-        return '%s_'%(self.net)
+        return '%s'%(self.net)
 
     def read_batch(self, perm, batch_index,data_raw,mode):
         max_length=0
